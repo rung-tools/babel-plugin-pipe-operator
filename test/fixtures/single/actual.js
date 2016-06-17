@@ -1,3 +1,3 @@
 const array = [1, 2, 3]
 
-array | map(n => n * 2)
+array | (_ => map(_, n => n * 2))

@@ -1,1 +1,1 @@
-array | (arr => arr.concat([1]))()
+array | (arr => arr.concat([1]))

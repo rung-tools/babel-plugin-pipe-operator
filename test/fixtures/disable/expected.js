@@ -1,5 +1,5 @@
 const fn = () => {
-  const arr = map([1, 2, 3], n => n + 1);
+  const arr = (_ => map(_, n => n + 1))([1, 2, 3]);
 
   return () => {
     "no pipe";

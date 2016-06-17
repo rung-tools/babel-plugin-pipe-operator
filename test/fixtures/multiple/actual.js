@@ -1,3 +1,3 @@
 array
-| map(n => n * 2)
-| filter(n => n % 3 == 0)
+| (_ => map(_, n => n * 2))
+| (_ => filter(_, n => n % 3 == 0))

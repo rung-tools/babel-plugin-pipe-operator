@@ -1,3 +1,3 @@
 array
-| map(n => n | addOne())
-| filter(n => n % 2 == 0)
+| (_ => map(_, n => n | addOne))
+| (_ => filter(n => n % 2 == 0))

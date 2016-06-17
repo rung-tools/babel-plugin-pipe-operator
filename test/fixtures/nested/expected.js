@@ -1,1 +1,1 @@
-filter(map(array, n => addOne(n)), n => n % 2 == 0);
+(_ => filter(n => n % 2 == 0))((_ => map(_, n => addOne(n)))(array));
