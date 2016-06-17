@@ -1,39 +1,38 @@
-# babel-plugin-pipe-operator
+# babel-plugin-pipe-operator-curry
 
-Overload the pipe operator (`|`) to provide Elixir/F#/Shell-like behavior
+This work is an alternative to [babel-plugin-pipe-operator](https://github.com/miraks/babel-plugin-pipe-operator).
+I choosed to implement `pipe operator` with the currying way instead of putting flow as the first callable arguments.
 
 ## Examples
 
 ```javascript
-import { map, filter } from 'lodash';
+import { mean, round } from 'lodash';
 
 const array = [1, 2, 3, 4, 5];
 
 array
-| map(n => n * 2)
-| filter(n => n % 3 == 0);
+| mean
+| round
+```
+
+Turn into
+
+```javascript
+import { mean, round } from 'lodash';
+
+const array = [1, 2, 3, 4, 5];
+
+round(mean(array))
 ```
 
 ## Disabling in current scope
 
-If you want to use the original pipe operator, you can disable this plugin in current scope (and it children scopes) using `"no pipe"` directive
-
-```javascript
-const fn = () => {
-  const arr = [1, 2, 3] | map(n => n + 1);
-
-  return () => {
-    "no pipe";
-
-    arr.map(n => n | 1);
-  };
-};
-```
+If you want to use the original pipe operator, you can disable this plugin in current scope (and it children scopes) using `"no pipe"` directive as described in the original one.
 
 ## Installation
 
 ```sh
-$ npm install --save-dev babel-plugin-pipe-operator
+$ npm install --save-dev babel-plugin-pipe-operator-curry
 ```
 
 ## Usage
@@ -44,21 +43,21 @@ $ npm install --save-dev babel-plugin-pipe-operator
 
 ```json
 {
-  "plugins": ["pipe-operator"]
+  "plugins": ["pipe-operator-curry"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel --plugins pipe-operator script.js
+$ babel --plugins pipe-operator-curry script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["pipe-operator"]
+  plugins: ["pipe-operator-curry"]
 });
 ```
 

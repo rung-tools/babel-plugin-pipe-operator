@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright (C) 2016 Alexey Volodkin <a@vldkn.net>
+Copyright (C) 2016 Alexey Volodkin <a@vldkn.net>, Quentin Gerodel <me@quentingerodel.eu>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

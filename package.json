@@ -1,7 +1,7 @@
 {
-  "name": "babel-plugin-pipe-operator",
+  "name": "babel-plugin-pipe-operator-curry",
   "version": "1.0.0",
-  "description": "Overload the pipe operator (`|`) to provide Elixir/F#/Shell-like behavior",
+  "description": "Alternative to babel-plugin-pipe-operator",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src/index.js -o lib/index.js",
@@ -18,14 +18,20 @@
     "babel",
     "babel-plugin",
     "pipe",
-    "pipe operator"
+    "pipe operator",
+    "currying",
+    "curry"
   ],
   "author": "Alexey Volodkin <a@vldkn.net>",
+  "contributors": [{
+   "name": "Quentin Gerodel",
+   "email": "me@quentingerodel.eu"
+  }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miraks/babel-plugin-pipe-operator/issues"
+    "url": "https://github.com/Swizz/babel-plugin-pipe-operator-curry/issues"
   },
-  "homepage": "https://github.com/miraks/babel-plugin-pipe-operator",
+  "homepage": "https://github.com/Swizz/babel-plugin-pipe-operator-curry",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
