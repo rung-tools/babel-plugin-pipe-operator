@@ -1,1 +1,1 @@
-hello("leo", "lea", "leon");
+(hello)("leo", "lea", "leon");

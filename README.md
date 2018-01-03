@@ -1,7 +1,7 @@
-# babel-plugin-pipe-operator-curry
+# @rung-tools/babel-plugin-pipe-operator
 
-This work is an alternative to [babel-plugin-pipe-operator](https://github.com/miraks/babel-plugin-pipe-operator).
-I choosed to implement `pipe operator` with the currying way instead of putting flow as the first callable arguments.
+This work is a fork of a fork. It's based on https://github.com/Swizz/babel-plugin-pipe-operator-curry,
+however, it integrates without problems with other plugins.
 
 ## Examples
 
@@ -22,7 +22,7 @@ import { mean, round } from 'lodash';
 
 const array = [1, 2, 3, 4, 5];
 
-round(mean(array))
+(round)((mean)(array))
 ```
 
 ## Disabling in current scope
@@ -32,7 +32,7 @@ If you want to use the original pipe operator, you can disable this plugin in cu
 ## Installation
 
 ```sh
-$ npm install --save-dev babel-plugin-pipe-operator-curry
+$ npm install --save-dev @rung-tools/babel-plugin-pipe-operator
 ```
 
 ## Usage
@@ -43,21 +43,21 @@ $ npm install --save-dev babel-plugin-pipe-operator-curry
 
 ```json
 {
-  "plugins": ["pipe-operator-curry"]
+  "plugins": ["@rung-tools/pipe-operator-curry"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel --plugins pipe-operator-curry script.js
+$ babel --plugins @rung-tools/pipe-operator-curry script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["pipe-operator-curry"]
+  plugins: ["@rung-tools/pipe-operator-curry"]
 });
 ```
 
