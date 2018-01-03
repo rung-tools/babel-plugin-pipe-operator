@@ -1,7 +1,6 @@
 {
   "name": "babel-plugin-pipe-operator",
   "version": "1.0.0",
-  "scope": "@haskellcamargo",
   "description": "Alternative to babel-plugin-pipe-operator",
   "main": "lib/index.js",
   "scripts": {
