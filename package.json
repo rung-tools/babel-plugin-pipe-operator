@@ -1,6 +1,7 @@
 {
-  "name": "babel-plugin-pipe-operator-curry",
+  "name": "babel-plugin-pipe-operator",
   "version": "1.0.0",
+  "scope": "@haskellcamargo",
   "description": "Alternative to babel-plugin-pipe-operator",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Swizz/babel-plugin-pipe-operator-curry"
+    "url": "https://github.com/rung-tools/babel-plugin-pipe-operator"
   },
   "keywords": [
     "babel",
@@ -24,14 +25,17 @@
   ],
   "author": "Alexey Volodkin <a@vldkn.net>",
   "contributors": [{
-   "name": "Quentin Gerodel",
-   "email": "me@quentingerodel.eu"
+    "name": "Quentin Gerodel",
+    "email": "me@quentingerodel.eu"
+  }, {
+    "name": "Marcelo Camargo",
+    "email": "marcelo.camargo@linuxmail.org"
   }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Swizz/babel-plugin-pipe-operator-curry/issues"
+    "url": "https://github.com/rung-tools/babel-plugin-pipe-operator/issues"
   },
-  "homepage": "https://github.com/Swizz/babel-plugin-pipe-operator-curry",
+  "homepage": "https://github.com/Swizz/babel-plugin-pipe-operator",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
